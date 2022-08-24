@@ -168,7 +168,7 @@ a{
 }
 @media (max-width: 767px) {
     .header .container .nav .links .li {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 5px;
     }
 }
@@ -639,6 +639,13 @@ a{
     grid-template-columns: repeat(auto-fill ,minmax(300px ,1fr));
     gap: 40px;
 }
+@media (max-width: 768px) {
+    .team-members .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 .team-members .container .box {
     position: relative;
     padding-right: 30px;
@@ -825,12 +832,21 @@ a{
     padding-bottom: 30px;
 }
 @media (max-width: 768px) {
+    .our-skills .container {
+        display: flex;
+        justify-content: center;
+    }
     .our-skills .container .cont {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 75%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .our-skills .container .cont .content {
+        width: 100%;
+        max-width: 80%
     }
 }
 .our-skills .container .cont .content .info {
@@ -964,7 +980,8 @@ a{
 }
 @media (max-width: 768px) {
     .events .container .content .time  {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
     }
 }
 .events .container .content .time .box {
@@ -1258,6 +1275,7 @@ a{
     text-align: center;
     opacity: .8;
     transition: var(--main-tranition);
+    max-width: 100%;
 }
 .stats .container .box::before,
 .stats .container .box::after {
@@ -1306,6 +1324,11 @@ a{
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
+}
+@media (max-width: 767px) {
+    .descound {
+        padding-bottom: var(--main-padding);
+    }
 }
 .descound .image {
     display: flex;
