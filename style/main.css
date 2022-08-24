@@ -698,6 +698,7 @@ a{
 }
 .team-members .container .box .text {
     padding-left: 70px;
+    padding-bottom: 20px;
 }
 .team-members .container .box h3 {
     padding-top: 10px;
